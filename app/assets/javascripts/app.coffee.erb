@@ -1,0 +1,20 @@
+angular.module "app", [
+  "ngResource"
+  "ngRoute"
+  "ngSanitize"
+]
+
+.config ($routeProvider, $locationProvider)->
+  $locationProvider.html5Mode true
+
+  $routeProvider.when('/',
+    templateUrl: "<%= asset_path('users/lista.html') %>",
+    # controller: 'UsersCtrl'
+  )
+  .when('/jade',
+    templateUrl: "<%= asset_path('users/arquivo.html') %>",
+    # controller: 'UsersCtrl'
+  )
+  # .otherwise({ redirectTo: '/' })
+
+

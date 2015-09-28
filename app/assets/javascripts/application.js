@@ -10,11 +10,11 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require jade/runtime
 //= require angular
 //= require_tree .
 
 
-//= require jade/runtime
 // require views/users/index
 
 // $.getJSON('/users', function(users){
